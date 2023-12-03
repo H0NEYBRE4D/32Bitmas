@@ -1,4 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Prociono&family=UnifrakturMaguntia&display=swap');
+
 :root {
-    maincolor: beige;
-    
+    --dark: #544c37;
+    --light: #b8aa90;
+    --pale: #fcedcc;
+    --accent: #f45738;
 }
+
+html {
+    background-color: #fcedcc;
+    background-image:
+    repeating-linear-gradient(120deg, rgba(255, 255, 255, 0.5), rgba(255,255,255,.7) 1px, transparent 1px, transparent 60px),
+    repeating-linear-gradient(60deg, rgba(255,255,255,.4), rgba(255,255,255,.6) 1px, transparent 1px, transparent 60px),
+    linear-gradient(60deg, rgba(230, 214, 173, 0.3) 25%, transparent 25%, transparent 75%, rgba(230, 214, 173,0.3) 75%, rgba(230, 214, 173, 0.3)),
+    linear-gradient(120deg, rgba(230, 214, 173, 0.3) 25%, transparent 25%, transparent 75%, rgba(230, 214, 173, 0.3) 75%, rgba(230, 214, 173, 0.3));
+    background-size: 70px 120px; 
+}
+
+.container {
+    width: 1400px;
+    height: 900px;
+    margin: 96px auto;
+    display: flex;
+    padding: 20px;
+}
+
+.cardsleft {
+    width: 300px;
+    height: 820px;
+    text-align: right;
+    margin: auto;
+    vertical-align:middle;
+}
+
+.cardsright {
+    width: 300px;
+    height: 820px;
+    margin: auto;
+    vertical-align:middle;
+}
+
+.center {
+    max-width: 480px;
+    height: 680px;
+    overflow-y: scroll;
+    margin: 0 auto;
+    padding: 30px 80px;
+    border: 1px dotted var(--dark);
+    background-color: var(--pale);
+    filter: drop-shadow(rgba(129, 74, 11, 0.473)1rem 1rem 10px);
+}
+
+p {
+    color: var(--dark);
+    font-family: Prociono, serif;
+    text-align: center;
+    margin-top: 0;
+    max-width: 75ch;
+    min-width: 20ch;
+}
+
+b {
+    color: var(--accent);
+}
+
+a {
+    color: var(--light);
+    text-decoration: underline 1px;
+}
+
+a:hover {
+    color: var(--accent);
+    text-decoration: underline wavy 1px;
+}
+
+h1 {
+    color: var(--accent);
+    font-family: UnifrakturMaguntia;
+    text-align: center;
+    margin-bottom: 12px;
+    filter: drop-shadow(rgba(129, 74, 11, 0.2) 4px 4px 4px);
+    font-size: 36px;
+}
+
+h2 {
+    color: var(--dark);
+    font-family: Prociono, serif;
+    text-align: center;
+    font-style: italic;
+    text-transform: lowercase;
+    font-size: 21px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+h3 {
+    color: var(--light);
+    font-family: Familjen Grotesk, sans-serif;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 12px;
+}
+
+hr.star {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double var(--light);
+    color: var(--light);
+    text-align: center;
+    margin-top: 36px;
+}
+
+hr.star:after {
+    content: "⭐";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 24px;
+    padding: 0 12px;
+    background: var(--pale);
+}
+
+hr.gift {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double var(--light);
+    color: var(--light);
+    text-align: center;
+    margin-top: 36px;
+}
+
+hr.gift:after {
+    content: "🎁";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 24px;
+    padding: 0 12px;
+    background: var(--pale);
+}
+
+hr.party {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double var(--light);
+    color: var(--light);
+    text-align: center;
+    margin-top: 36px;
+}
+
+hr.party:after {
+    content: "🎉";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 24px;
+    padding: 0 12px;
+    background: var(--pale);
+}
+
+/** card placements **/
+
+#card1 {
+    transform: rotate(-5deg);
+    filter: drop-shadow(rgba(129, 74, 11, 0.473)1rem 1rem 10px);
+    margin: 20px;
+    position: relative;
+}
+
+#card2 {
+    transform: rotate(6deg);
+    filter: drop-shadow(rgba(129, 74, 11, 0.473)1rem 1rem 10px); 
+    margin: -10px;
+    position: relative;
+}
+
+#card3 {
+    transform: rotate(0deg);
+    filter: drop-shadow(rgba(129, 74, 11, 0.473)1rem 1rem 10px);
+    margin: 0;
+    position: relative;
+}
+
+#card4 {
+    transform: rotate(3deg);
+    filter: drop-shadow(rgba(129, 74, 11, 0.473)1rem 1rem 10px);
+    margin: 30px;
+    position: relative;
+}
+
+#card5 {
+    transform: rotate(9deg);
+    filter: drop-shadow(rgba(129, 74, 11, 0.473)1rem 1rem 10px);
+    margin: 2px;
+    position: relative;
+}
+
+#card6 {
+    transform: rotate(-5deg);
+    filter: drop-shadow(rgba(129, 74, 11, 0.473)1rem 1rem 10px);
+    margin: 0;
+    position: relative;
+}
+
+#card7 {
+    transform: rotate(5deg);
+    filter: drop-shadow(rgba(129, 74, 11, 0.473)1rem 1rem 10px);
+    margin: -10px;
+    position: relative;
+}
+
+#card8 {
+    transform: rotate(5deg);
+    filter: drop-shadow(rgba(129, 74, 11, 0.473)1rem 1rem 10px);
+    margin: 40px;
+    position: relative;
+}
+
