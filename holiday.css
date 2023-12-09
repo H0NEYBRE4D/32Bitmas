@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Prociono&family=UnifrakturMaguntia&display=swap');
 
 :root {
-    --dark: #544c37;
-    --light: #b8aa90;
+    --dark: #2c271a;
+    --light: #695b43;
     --pale: #fcedcc;
-    --accent: #f45738;
+    --accent: #dc3311;
 }
 
 html {
@@ -56,12 +56,12 @@ p {
     font-family: Prociono, serif;
     text-align: center;
     margin-top: 0;
-    max-width: 75ch;
-    min-width: 20ch;
+    max-width: 65ch;
 }
 
 b {
     color: var(--accent);
+    font-weight: 900;
 }
 
 a {
@@ -80,22 +80,30 @@ h1 {
     text-align: center;
     margin-bottom: 12px;
     filter: drop-shadow(rgba(129, 74, 11, 0.2) 4px 4px 4px);
-    font-size: 36px;
+    font-size: 34px;
+    letter-spacing: 1px;
 }
 
 h2 {
-    color: var(--dark);
+    color: var(--light);
     font-family: Prociono, serif;
     text-align: center;
-    font-style: italic;
-    text-transform: lowercase;
     font-size: 21px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+.gothic {
+    color: var(--light);
+    font-family: UnifrakturMaguntia;
+    font-size: 24px;
     margin-top: 0;
     margin-bottom: 12px;
 }
 
 h3 {
-    color: var(--light);
+    color: var(--dark);
     font-family: Familjen Grotesk, sans-serif;
     text-align: center;
     margin-top: 36px;
